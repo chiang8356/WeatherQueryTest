@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="./function.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS.css">
+
+
+</head>
+
+<body>
+    <h1>簡易氣象查詢網站</h1>
+    <hr>
+    <div  style="float: left;margin-right: 50px;">
+        <h2>查詢歷年台灣天氣</h2>
+        <div >
+            <input type="text"id="year" name="year">
+            <button id="searchButton">點擊</button>
+        </div>
+        <div id="block1"></div>
+    </div>
+    <div  style="float: left;margin-left: 50px;">
+        <h2>查詢地區歷年溫度</h2>
+        <div >
+            <input type="text"id="region" name="region">
+            <button id="searchBt">點擊</button>
+        </div>
+        <div id="block2" style="float: left;margin-right: 50px;"></div>
+        <div style="float: left;margin-left: 50px;">
+            <canvas id="temperatureChart" width="800" height="400"></canvas>
+        </div>
+    </div>
+    <script src="./fetch.js"></script>
+</body>
+</html>
